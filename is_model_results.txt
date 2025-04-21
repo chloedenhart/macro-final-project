@@ -1,0 +1,33 @@
+
+IS Curve Estimation Results
+==================================================
+                           Dependent variable:    
+                       ---------------------------
+                       Clothing Sales (millions ) 
+--------------------------------------------------
+Federal Funds Rate             -2,506.650         
+                               (6,201.226)        
+                                                  
+Fed Funds Rate (lag 1)         16,969.550         
+                              (10,219.920)        
+                                                  
+Fed Funds Rate (lag 2)       -13,784.930***       
+                               (4,961.553)        
+                                                  
+Disposable Income                -0.982           
+                                 (1.338)          
+                                                  
+Consumer Sentiment               80.052           
+                                (115.746)         
+                                                  
+Constant                       32,418.430         
+                              (20,783.350)        
+                                                  
+--------------------------------------------------
+Observations                       55             
+R2                                0.324           
+Adjusted R2                       0.255           
+Residual Std. Error        5,284.814 (df = 49)    
+F Statistic               4.688*** (df = 5; 49)   
+==================================================
+Note:                  *p<0.1; **p<0.05; ***p<0.01
