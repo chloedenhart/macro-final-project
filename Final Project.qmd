@@ -156,6 +156,8 @@ ggplot() +
   scale_color_manual(name = "", values = c("Federal Funds Rate" = "red", "Clothing Sales (thousands)" = "blue")) +
   theme_minimal()
 ```
+**Interpretation**
+This graph represents the sales in thousands of dollars versus the federal funds rate from 2020-2024. It shows a dip in the fed funds rate when the Covid pandemic hit to create a uptick in consumer confidence despite many people being unemployed and not feeling confident in the economy. Around this time we see a massive decrease in the amount of clothing sales. As soon as the fed rate was decreased the number of clothing sales quickly increases. From then on we see a constant trend of an increase and decrease of sales which appears to be due to trends in the clothing industry or seasonal effects. 
 
 ### 3.2 Summary Statistics
 
@@ -190,6 +192,8 @@ corrplot(correlation_matrix,
          diag = FALSE,
          title = "Correlation Matrix")
 ```
+**Interpretation**
+This correlation matrix shows us the relationship between several factors within the rates and the clothing retail sector. Fed funbds versus clothing sales shows us a 
 
 ### 3.3 Seasonal Patterns Analysis
 
@@ -230,6 +234,7 @@ ggplot(yearly_comparison, aes(x = month, y = avg_sales, color = factor(year), gr
        color = "Year") +
   theme_minimal()
 ```
+**Interpretation**
 
 ## 4. IS-LM Model Analysis
 
@@ -280,6 +285,7 @@ create_islm_graph <- function() {
 
 create_islm_graph()
 ```
+**Interpretation**
 
 ### 4.2 Empirical IS-LM Estimation
 
@@ -329,6 +335,7 @@ ggplot(model_data, aes(x = fed_funds_rate, y = clothing_sales)) +
        y = "Clothing Sales (millions $)") +
   theme_minimal()
 ```
+**Interpretation**
 
 ### 4.3 Lagged Effects Analysis
 
@@ -373,6 +380,7 @@ stargazer(distributed_lag_model, type = "text",
           dep.var.labels = "Clothing Sales (millions $)",
           out = "distributed_lag_results.txt")
 ```
+**Interpretation**
 
 ## 5. Impact Analysis During Key Economic Periods
 
@@ -417,6 +425,7 @@ ggplot(all_data, aes(x = fed_funds_rate, y = clothing_sales, color = economic_pe
   theme_minimal() +
   theme(legend.position = "bottom")
 ```
+**Interpretation**
 
 ## 6. Scenario Analysis
 
